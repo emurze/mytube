@@ -1,0 +1,17 @@
+<div>
+    <div>
+        <div>{# burger #}</div>
+        <div>{# logo #}</div>
+    </div>
+    <div>{# search_form #}</div>
+    <div>
+        {% if request.user.is_authenticated %}
+            <div>{# create #}</div>
+            <div>{# notifications #}</div>
+        {% else %}
+            <div>{# settings #}</div>
+            <div>{# login #}</div>
+        {% endif %}
+        <div>{# user_icon #}</div>
+    </div>
+</div>
