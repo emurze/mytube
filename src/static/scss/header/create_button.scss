@@ -1,0 +1,9 @@
+.create_button {
+    padding: 14px 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+
+    &:hover {
+        background-color: gray;
+    }
+}

@@ -1,0 +1,28 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  height: 56px;
+  width: 100%;
+}
+
+.create_button_and_notifications_and_user_icon {
+  display: flex;
+  align-items: center;
+  width: 225px;
+  height: 40px;
+  position: relative;
+  top: 10px;
+}
+.create_button_and_notifications_and_user_icon .create_button_and_notifications {
+  display: flex;
+  align-items: center;
+  margin-left: 33px;
+}
+
+.burger_and_logo {
+  display: flex;
+  align-items: center;
+  width: 220px;
+}
+
+/*# sourceMappingURL=header.css.map */

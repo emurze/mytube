@@ -1,2 +1,32 @@
 @import 'reset.scss';
 
+* {
+    // dark theme
+    color: #eee;
+    background: #121212;
+}
+body {
+    -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+    zoom: 0.9; /* Other non-webkit browsers */
+    zoom: 90%; /* Webkit browsers */
+}
+
+#total_page {
+    height: 100%;
+}
+#header {
+    background-color: #2d2d2b;
+}
+#content {
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #0d6446;
+}
+
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

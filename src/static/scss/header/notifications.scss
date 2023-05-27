@@ -1,0 +1,21 @@
+.notifications {
+    padding: 10px;
+    border-radius: 50%;
+
+    &:hover {
+        background-color: gray;
+    }
+    &__svg {
+        pointer-events: none;
+        display: block;
+        width: 30px;
+        height: 100%;
+
+        &:hover {
+            background-color: gray;
+        }
+    }
+    &__svg:hover {
+        background-color: gray;
+    }
+}

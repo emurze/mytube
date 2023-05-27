@@ -1,17 +1,23 @@
-<div>
-    <div>
-        <div>{# burger #}</div>
-        <div>{# logo #}</div>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/header.css' %}" />
+<div class="header__container">
+    <div class="burger_and_logo">
+        {% include 'include/header/components/burger.html' %}
+        {% include 'include/header/components/logo.html' %}
     </div>
-    <div>{# search_form #}</div>
+    {% include 'include/header/components/form.html' %}
     <div>
         {% if request.user.is_authenticated %}
-            <div>{# create #}</div>
-            <div>{# notifications #}</div>
+            <div class="create_button_and_notifications_and_user_icon">
+                <div class="create_button_and_notifications">
+                    {% include 'include/header/components/create_button.html' %}
+                    {% include 'include/header/components/notifications.html' %}
+                </div>
+                {% include 'include/header/components/user_icon.html' %}
+            </div>
         {% else %}
             <div>{# settings #}</div>
-            <div>{# login #}</div>
+            <div>{# login #}</div>>
         {% endif %}
-        <div>{# user_icon #}</div>
     </div>
 </div>

@@ -4,18 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    {% block head %}
+    {% endblock %}
 </head>
 <body>
-    <div id="header">
-        {# include tag #}
-        {% include 'include/header/base.html' %}
-    </div>
-    <div id="sidebar">
-        {# include tag #}
-    </div>
-    <div id="content">
-        {% block content %}
-        {% endblock %}
+    <div id="total_page" class="dark-theme">
+        <div id="header">
+            {# include tag #}
+            {% include 'include/header/base.html' %}
+        </div>
+        <div id="sidebar">
+            {# include tag #}
+        </div>
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
     </div>
 </body>
 </html>
