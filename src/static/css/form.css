@@ -1,5 +1,5 @@
 .search_form {
-  width: 700px;
+  width: 680px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -9,52 +9,67 @@
 }
 .search_form form {
   display: flex;
-  width: 100%;
-}
-.search_form input[type=text] {
-  color: var(--ytd-searchbox-text-color);
-  width: 100%;
-  padding: 0 84px 0 20px;
+  position: relative;
   height: 40px;
-  border-radius: 26px;
-  border: 0.5px ridge #3a3939;
-  background-color: #121212;
-  font-size: 1.35em;
+  width: 100%;
 }
-.search_form input[type=text]:focus {
-  border: 1px ridge #2f7bec;
+.search_form__container_first {
+  display: block;
+  width: 38px;
+  height: 40px;
+  background-color: #2f7bec;
 }
-.search_form div[class=add_search] {
+.search_form__container_first div[class=add_search] {
   width: 50px;
   height: 40px;
   position: relative;
-  left: 20px;
-  background-color: #121212;
 }
-.search_form div[class=add_search] svg {
+.search_form__container_first div[class=add_search] svg {
   display: block;
   width: 50px;
   height: 40px;
-  border-top: 1px ridge #3a3939;
-  border-bottom: 1px ridge #3a3939;
-  border-left: 1px ridge #3a3939;
-  border-radius: 40px 0 0 40px;
-  background-color: #121212;
 }
-.search_form button[type=submit] {
+.search_form__container_last {
   position: relative;
-  right: 64px;
+  width: 100%;
+}
+.search_form__container_last input[type=text] {
+  color: var(--ytd-searchbox-text-color);
+  width: 100%;
+  padding: 0 66px 0 16px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px ridge #3a3939;
+  background-color: #121212;
+  font-size: 1.35em;
+}
+.search_form__container_last input[type=text]:focus {
+  border: 1px ridge #2f7bec;
+}
+.search_form__container_last button[type=submit] {
+  position: absolute;
+  right: 0;
   height: 40px;
   width: 64px;
 }
-.search_form button[type=submit] svg {
+.search_form__container_last button[type=submit] .svg_button {
   display: block;
   width: 64px;
   height: 40px;
   border: 1px ridge #3a3939;
-  border-radius: 0 40px 40px 0;
+  border-radius: 0 36px 36px 0;
   pointer-events: none;
   background-color: #262323;
+}
+.search_form__container_last .cross {
+  position: absolute;
+  right: 60px;
+  z-index: 3;
+  font-size: 35px;
+  color: #b2b2b2;
+  background: transparent;
+  padding: 0 10px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=form.css.map */

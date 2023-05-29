@@ -105,4 +105,8 @@ body {
   user-select: none;
 }
 
+.no-display {
+  display: none;
+}
+
 /*# sourceMappingURL=base.css.map */
